@@ -3,9 +3,11 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "d645f230134009b22d9eb4589378d444",
+  "assets/AssetManifest.json": "08eb19e1aea132cfca48c4c07e0d3987",
+"assets/assets/images/any-clothes.jpg": "cc435ac9d0aa5d94ae3fccaa9d776381",
 "assets/assets/images/background_vector.jpg": "5d76a1feda5045393271af8d0440eee7",
 "assets/assets/images/clothes_shop.jpg": "e67e37162887e1dc994676b39352d2e4",
+"assets/assets/images/delivery.jpg": "76c9ec9e3c4fe90acde30f23af015ee5",
 "assets/assets/images/empty.png": "5c4e2926c42b3030c31d5d3ce6e486b7",
 "assets/assets/images/flower.jpg": "1d8cd599a44a51625ef200e352c56d1c",
 "assets/assets/images/sale.jpg": "0da3569bb3d2118c0b0ccc479b90cf83",
@@ -27,14 +29,14 @@ const RESOURCES = {
 "canvaskit/profiling/canvaskit.wasm": "371bc4e204443b0d5e774d64a046eb99",
 "favicon.png": "90db557240f761eb95a343b47d514208",
 "flutter.js": "1cfe996e845b3a8a33f57607e8b09ee4",
-"icons/Icon-192.png": "ca9e4dbf64be744574b8e4bb7681d1e1",
-"icons/Icon-512.png": "9c33ad242d6667342614498dfdb7878f",
-"icons/Icon-maskable-192.png": "aaf77f43886ca5fd2080e83aa0ab315a",
-"icons/Icon-maskable-512.png": "9c33ad242d6667342614498dfdb7878f",
-"index.html": "bf9c56682050b0969954634fef20d75c",
-"/": "bf9c56682050b0969954634fef20d75c",
-"main.dart.js": "6442196565085e18422302f2755c2786",
-"manifest.json": "4729e85f140716e5176f00dcdffb2dbc",
+"icons/Icon-192.png": "a223f713046fe073e07743742defe127",
+"icons/Icon-512.png": "715dd3e726dec7eae693dd93873a5d13",
+"icons/Icon-maskable-192.png": "a223f713046fe073e07743742defe127",
+"icons/Icon-maskable-512.png": "715dd3e726dec7eae693dd93873a5d13",
+"index.html": "4e98b64ac1771b0244a9de9f8c7f8e9a",
+"/": "4e98b64ac1771b0244a9de9f8c7f8e9a",
+"main.dart.js": "58e2f6b28bb8d0fd9cfdb9b82d74edde",
+"manifest.json": "90ad28d371d62ad8332fa28491ed323f",
 "version.json": "58286c2712c8b02d9bd2b1c7627573a3"
 };
 
