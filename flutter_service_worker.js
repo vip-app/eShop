@@ -3,9 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "08eb19e1aea132cfca48c4c07e0d3987",
+  "assets/AssetManifest.json": "394aab6a405fc4ebc847cb1bd8ee6ada",
 "assets/assets/images/any-clothes.jpg": "cc435ac9d0aa5d94ae3fccaa9d776381",
-"assets/assets/images/background_vector.jpg": "5d76a1feda5045393271af8d0440eee7",
 "assets/assets/images/clothes_shop.jpg": "944e7398d35452c1467dccaeb67bcdc1",
 "assets/assets/images/delivery.jpg": "76c9ec9e3c4fe90acde30f23af015ee5",
 "assets/assets/images/empty.png": "5c4e2926c42b3030c31d5d3ce6e486b7",
@@ -33,9 +32,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "715dd3e726dec7eae693dd93873a5d13",
 "icons/Icon-maskable-192.png": "a223f713046fe073e07743742defe127",
 "icons/Icon-maskable-512.png": "715dd3e726dec7eae693dd93873a5d13",
-"index.html": "e5b71b523d8f78dc9f59a6d637e68880",
-"/": "e5b71b523d8f78dc9f59a6d637e68880",
-"main.dart.js": "95a8cd92829d772d6206bf191dd5a72f",
+"index.html": "69716614cb4ae332d67942c48b2ff8fe",
+"/": "69716614cb4ae332d67942c48b2ff8fe",
+"main.dart.js": "5883e1c099b8f2c94930842169c7156c",
 "manifest.json": "90ad28d371d62ad8332fa28491ed323f",
 "version.json": "58286c2712c8b02d9bd2b1c7627573a3"
 };
