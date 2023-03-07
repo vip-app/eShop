@@ -14,16 +14,33 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
+  <style>
+    .container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+    }
 
+    .indicator {
+      color: grey;
+    }
+  </style>
   <title>Магазин одежды</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <!--body style="overflow: hidden"-->
+  <div id="loading_container" class="container">
+    <p class="indicator">Загрузка...</p>
+  </div>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    var serviceWorkerVersion = '2555031940';
+    var serviceWorkerVersion = '522287956';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
@@ -86,36 +103,47 @@
       loadMainDartJs();
     }
   </script>
+  <!-- Removes the loading indicator after 10 seconds-->
+  <script>
+    window.onload = function () {
+      setTimeout(function () {
+        var loadingIndicator = document.getElementById("loading_container");
+        if (loadingIndicator) {
+          loadingIndicator.remove();
+        }
+      }, 5000)
+    }
+  </script>
   <!-- Capture PWA install prompt event -->
-<script>
-    let deferredPrompt;
+  <script>
+	let deferredPrompt;
 
-    window.addEventListener('beforeinstallprompt', (e) => {
-      deferredPrompt = e;
-    });
+	window.addEventListener('beforeinstallprompt', (e) => {
+	  deferredPrompt = e;
+	});
 
-    function promptInstall(){
-       deferredPrompt.prompt();
-    }
+	function promptInstall(){
+	   deferredPrompt.prompt();
+	}
 
-    // Listen for app install event
-    window.addEventListener('appinstalled', () => {
-      deferredPrompt = null;
-      appInstalled();
-    });
+	// Listen for app install event
+	window.addEventListener('appinstalled', () => {
+	  deferredPrompt = null;
+	  appInstalled();
+	});
 
-    // Track how PWA was launched (either from browser or as PWA)
-    function getLaunchMode() {
-      const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
-      if(deferredPrompt) hasPrompt();
-      if (document.referrer.startsWith('android-app://')) {
-        appLaunchedAsTWA();
-      } else if (navigator.standalone || isStandalone) {
-        appLaunchedAsPWA();
-      } else {
-        window.appLaunchedInBrowser();
-      }
-    }
-</script>
+	// Track how PWA was launched (either from browser or as PWA)
+	function getLaunchMode() {
+	  const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
+	  if(deferredPrompt) hasPrompt();
+	  if (document.referrer.startsWith('android-app://')) {
+		appLaunchedAsTWA();
+	  } else if (navigator.standalone || isStandalone) {
+		appLaunchedAsPWA();
+	  } else {
+		window.appLaunchedInBrowser();
+	  }
+	}
+  </script>
 </body>
 </html>
