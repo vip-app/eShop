@@ -23933,7 +23933,7 @@ a=c.gSz().h(0,"id")
 if(a==null){e=A.cg(J.bf(b.a,"shopId"))
 e.toString
 a=e}n=a
-m=A.j7("https://i-admin.fun/api/data/"+A.f(n),0,null)
+m=A.j7("http://i-admin.fun/api/data/"+A.f(n),0,null)
 p=5
 s=8
 return A.a1(A.aRF(m),$async$Zd)
